@@ -1,0 +1,11 @@
+#contenido {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+@media (max-width: 908px) {
+    #contenido {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+}

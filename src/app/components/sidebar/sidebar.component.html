@@ -1,0 +1,26 @@
+<aside>
+    <h3>Busqueda por precios</h3>
+
+    <form [formGroup]="filtroForm" (ngSubmit)="onSubmit()">
+        <label for="desde">Desde: </label>
+        <input type="number" name="desde" class="form-control" formControlName="desde" pattern="^[0-9]+">
+
+        <label for="hasta">Hasta: </label>
+        <input type="number" name="hasta" class="form-control" formControlName="hasta" pattern="^[0-9]+">
+
+        <input type="submit" [disabled]="!filtroForm.valid" name="" id="" value="Buscar" class="btn btn-primary">
+    </form>
+
+    <h3>Shopping Car</h3>
+    <div class="shopping" *ngFor='let item of shopping'>
+        <i (click)="borrarArticulo(item)" class="fa fa-times" aria-hidden="true"></i>
+        <p><b>Articulo: </b>{{item.name}}</p>
+        <p><b>Price: </b>${{item.price}}</p>
+        <p><b>Cantidad: </b>{{item.cantidad}}</p>
+    </div>
+
+    <div class="shopping">
+        <p><b>Total: </b>${{total}}</p>
+    </div>
+
+</aside>

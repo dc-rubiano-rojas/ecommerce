@@ -1,0 +1,17 @@
+.wishlist {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.favoritos {
+    /* width: 100%;
+    height: auto;
+    background-color: #cccccc; */
+}
+
+@media (max-width: 908px) {
+    .wishlist {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+}

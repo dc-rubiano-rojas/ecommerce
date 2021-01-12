@@ -1,0 +1,69 @@
+.car {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.carta {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.art {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+
+.desc {
+    align-self: center;
+    margin-left: 1em;
+}
+
+img {
+    width: 200px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.opt {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-right: 3em;
+}
+
+.opt .cancel {
+    margin: 2em;
+    padding: 10px;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}
+
+.opt .add {
+    margin: 2em;
+    padding: 10px;
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+
+.opt .add:hover,
+.opt .cancel:hover {
+    border: 1px solid #ccc;
+    /* background-color: #ccc; */
+    box-shadow: 5px 5px 30px inset #ccc;
+}
+
+.total {
+    font-size: 3em;
+    text-align: right;
+}
+
+@media (max-width: 908px) {
+    .car {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+}

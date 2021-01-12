@@ -1,0 +1,56 @@
+header {
+    /* position: fixed; */
+    height: 60px;
+    width: 100%;
+    background-color: #092d5c;
+    /* left: 0px; */
+    /* top: 0px; */
+}
+
+.header_change {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#logo {
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    line-height: 60px;
+    /* margin-left: 20px; */
+    float: left;
+    transition: all 200ms;
+}
+
+#logo:hover {
+    font-size: 32px;
+}
+
+#nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /* margin-right: 15px; */
+}
+
+nav ul li {
+    list-style: none;
+    padding: 7px;
+    transition: all 100ms;
+    margin-top: 4px;
+}
+
+nav ul li:hover {
+    border: 1px solid white;
+    box-shadow: 0 0 1px wheat;
+}
+
+nav ul li i {
+    font-size: 35px;
+}

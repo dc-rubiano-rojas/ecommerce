@@ -1,0 +1,13 @@
+.content {
+    display: block;
+    float: left;
+    /* margin: 1px; */
+    /* margin: 15px 10px 15px 10px; */
+}
+
+@media (max-width: 908) {
+    .content {
+        /* display: flex;
+        flex-flow: column wrap; */
+    }
+}

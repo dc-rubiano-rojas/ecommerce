@@ -1,0 +1,52 @@
+<div class="jumbotron jumbotron-fluid contenedor">
+    <div class="container">
+        <h1 class="display-4">Shopping Car</h1>
+        <p class="lead">These are your articles to shopping!</p>
+    </div>
+</div>
+
+<div class="contenedor">
+
+    <!-- <div class="carrito">
+        <app-articles [articles]="carrito"></app-articles>
+    </div>
+
+    <app-sidebar></app-sidebar> -->
+
+
+
+    <div class="card carta my-4" *ngFor='let articulo of carrito'>
+        <!-- <div class="card-head">{{articulo.name}}</div>
+            <div class="card-body">{{articulo.price}}</div> -->
+
+        <div class="art">
+            <div id="img">
+                <img src="{{articulo.url}}" alt="">
+            </div>
+            <div class="desc">
+                <h3>{{articulo.name}}</h3>
+                <p>${{articulo.price}} x <b style="font-size: 2em;">{{articulo.cantidad}}</b></p>
+            </div>
+        </div>
+
+        <div class="opt">
+            <div class="cancel" (click)='borrarArticulo(articulo)'>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="add" (click)='agregarArticulo(articulo)'>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+        <div class="card-header total">
+            Total: ${{total}}
+        </div>
+    </div>
+
+
+
+</div>

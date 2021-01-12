@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer #up {
+    height: 50px;
+    background-color: #37475A;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    cursor: pointer
+}
+
+footer #down {
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    color: white;
+    background-color: #131A22;
+}
