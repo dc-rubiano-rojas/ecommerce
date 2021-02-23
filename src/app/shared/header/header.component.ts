@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @HostListener('window:scroll', ['$event'])
+  @HostListener('document:scroll')
   scrollFunction(): void{
     console.log('scrlling...');
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
