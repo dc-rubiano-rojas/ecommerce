@@ -7,15 +7,15 @@ import { Observable } from 'rxjs';
 export class ArticulosService {
 
   articulos = [
-    {id: 1, name: 'Articulo 1' , url: '../../assets/images/articulos/articulo-1.jpg', favorito: false, price: 120000},
-    {id: 2, name: 'Articulo 2' , url: '../../assets/images/articulos/articulo-2.jpg', favorito: false, price: 200000},
-    {id: 3, name: 'Articulo 3' , url: '../../assets/images/articulos/articulo-3.jpg', favorito: false, price: 82000},
-    {id: 4, name: 'Articulo 4' , url: '../../assets/images/articulos/articulo-4.jpg', favorito: false, price: 12000},
-    {id: 5, name: 'Articulo 5' , url: '../../assets/images/articulos/articulo-5.jpg', favorito: false, price: 500000},
-    {id: 6, name: 'Articulo 6' , url: '../../assets/images/articulos/articulo-6.jpg', favorito: false, price: 30000},
-    {id: 7, name: 'Articulo 7' , url: '../../assets/images/articulos/articulo-7.jpg', favorito: false, price: 100000},
-    {id: 8, name: 'Articulo 8' , url: '../../assets/images/articulos/articulo-8.jpg', favorito: false, price: 150000},
-    {id: 9, name: 'Articulo 9' , url: '../../assets/images/articulos/articulo-9.jpg', favorito: false, price: 135000},
+    {id: 1, name: 'Articulo 1' , url: './assets/images/articulos/articulo-1.jpg', favorito: false, price: 120000},
+    {id: 2, name: 'Articulo 2' , url: './assets/images/articulos/articulo-2.jpg', favorito: false, price: 200000},
+    {id: 3, name: 'Articulo 3' , url: './assets/images/articulos/articulo-3.jpg', favorito: false, price: 82000},
+    {id: 4, name: 'Articulo 4' , url: './assets/images/articulos/articulo-4.jpg', favorito: false, price: 12000},
+    {id: 5, name: 'Articulo 5' , url: './assets/images/articulos/articulo-5.jpg', favorito: false, price: 500000},
+    {id: 6, name: 'Articulo 6' , url: './assets/images/articulos/articulo-6.jpg', favorito: false, price: 30000},
+    {id: 7, name: 'Articulo 7' , url: './assets/images/articulos/articulo-7.jpg', favorito: false, price: 100000},
+    {id: 8, name: 'Articulo 8' , url: './assets/images/articulos/articulo-8.jpg', favorito: false, price: 150000},
+    {id: 9, name: 'Articulo 9' , url: './assets/images/articulos/articulo-9.jpg', favorito: false, price: 135000},
   ];
 
   favoritos = [];
